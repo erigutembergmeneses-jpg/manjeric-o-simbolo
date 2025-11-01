@@ -39,9 +39,7 @@ Esta proposta dialoga com:
 
 Este conteúdo está hospedado como página estática via **GitHub Pages**:
 
-👉 [**Acesse a versão web aqui**](https://seu-usuario.github.io/nome-do-repositorio)
-
-*(Substitua o link acima pelo URL real após ativar o GitHub Pages.)*
+👉 [**Acesse a versão web aqui**]https://erigutembergmeneses-jpg.github.io/manjeric-o-simbolo/)
 
 Para visualizar localmente, basta abrir o arquivo [`index.html`](index.html) em qualquer navegador.
 
