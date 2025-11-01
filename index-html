@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manjericão da Justiça Neurocompatível</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      color: #2c3e50;
+      background-color: #f9f7f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1.5rem 1.5rem;
+      background-color: #e8f4e5;
+      border-bottom: 1px solid #d0e8c9;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: contain;
+      margin: 0 auto 1.2rem;
+      border-radius: 6px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #27ae60;
+    }
+
+    .image-credit {
+      font-size: 0.85rem;
+      color: #7f8c8d;
+      margin-top: 0.4rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .verse {
+      margin-bottom: 2.5rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid #27ae60;
+    }
+
+    .verse h2 {
+      font-size: 1.4rem;
+      color: #27ae60;
+      margin-top: 0;
+    }
+
+    .highlight-link {
+      display: block;
+      text-align: center;
+      margin: 1.5rem auto;
+      padding: 0.8rem 1.2rem;
+      background-color: #e8f4e5;
+      color: #27ae60;
+      text-decoration: none;
+      border-radius: 6px;
+      max-width: 500px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .highlight-link:hover {
+      background-color: #d4edda;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem 3rem;
+      color: #7f8c8d;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+      .verse h2 {
+        font-size: 1.2rem;
+      }
+      header img {
+        max-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Basil_Basilicum.jpg/800px-Basil_Basilicum.jpg" 
+      alt="Pé frondoso de manjericão com folhas verdes e flores brancas"
+    >
+    <div class="image-credit">
+      Foto: <a href="https://commons.wikimedia.org/wiki/File:Basil_Basilicum.jpg" target="_blank" rel="noopener">Rasbak / Wikimedia Commons</a> (CC BY-SA 3.0)
+    </div>
+    <h1>Manjericão da Justiça Neurocompatível</h1>
+    
+    <a 
+      href="https://commons.wikimedia.org/wiki/File:Basil_Basilicum.jpg" 
+      class="highlight-link"
+      target="_blank"
+      rel="noopener"
+    >
+      🌿 Veja um manjericão frondoso em alta resolução
+    </a>
+  </header>
+
+  <div class="container">
+    <div class="verse">
+      <h2>1. Neuroplasticidade e regeneração</h2>
+      <p>O manjericão é uma erva de crescimento rápido, capaz de se regenerar mesmo após ser colhida — basta cortar os ramos superiores para que novos brotos surjam com vigor. Essa capacidade de renovação contínua espelha a neuroplasticidade, especialmente a do cérebro adolescente, que está em constante reorganização sináptica. Assim como o manjericão não é “fixo” em sua forma, a identidade humana — sobretudo em contextos de desenvolvimento ou trauma — não é estática. A justiça neurocompatível reconhece essa fluidez e rejeita a ideia de um “eu imutável” sobre o qual se baseia a responsabilização penal tradicional.</p>
+    </div>
+
+    <div class="verse">
+      <h2>2. Fragilidade e potência simultâneas</h2>
+      <p>O manjericão é delicado: suas folhas murcham rapidamente sem cuidado, mas, quando cultivado com atenção, exala um aroma intenso e curativo. Da mesma forma, a justiça neurocompatível parte do reconhecimento da vulnerabilidade neurobiológica (especialmente em jovens ou em pessoas com lesões cerebrais) não como fraqueza a ser punida, mas como condição que exige cuidado institucional. A potência do sistema não está na força punitiva, mas na capacidade de promover transformação por meio de escuta, reparação e acompanhamento neuropsicossocial.</p>
+    </div>
+
+    <div class="verse">
+      <h2>3. Raízes comunitárias e sabedoria popular</h2>
+      <p>Em muitas culturas latino-americanas, o manjericão é cultivado em janelas, quintais e terreiros — não como planta de luxo, mas como presença cotidiana de proteção, saúde e equilíbrio. Ele simboliza uma sabedoria doméstica que se transmite entre gerações. A justiça neurocompatível busca algo semelhante: descentralizar o poder punitivo do Estado e integrar saberes comunitários, familiares e científicos na avaliação e resposta ao ato infracional. Trata-se de uma justiça que “cresce onde é plantada com intenção”, não impõe de cima para baixo.</p>
+    </div>
+
+    <div class="verse">
+      <h2>Conclusão simbólica</h2>
+      <p>Portanto, o manjericão não é um símbolo de severidade ou imutabilidade — como a balança ou a espada da justiça clássica —, mas de vida em transformação, cuidado ativo e possibilidade de recomeço. Ele representa uma justiça que não corta, mas cultiva; que não fixa culpabilidade, mas investiga condições; que não aprisiona identidades, mas abre caminho para novas narrativas.</p>
+      <p>Essa metáfora botânica pode ser especialmente poderosa em contextos latino-americanos, onde o cultivo de ervas carrega significados afetivos, espirituais e sociais profundos — alinhando-se à intenção de criar uma justiça mais humana, empiricamente fundamentada e eticamente orientada para a libertação, não para o controle.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 — Justificação simbólica para a justiça neurocompatível<br>
+    Inspirada na obra de José Erigutemberg Meneses de Lima</p>
+  </footer>
+</body>
+</html>
