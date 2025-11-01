@@ -21,25 +21,28 @@
       border-bottom: 1px solid #d0e8c9;
     }
 
-    header img {
+    header img.basil {
       max-width: 100%;
       height: auto;
       max-height: 250px;
       object-fit: contain;
       margin: 0 auto 1.2rem;
       border-radius: 6px;
+      background: white;
+      padding: 8px;
     }
 
     h1 {
       font-size: 2rem;
-      margin: 0;
+      margin: 0.5rem 0 0;
       color: #27ae60;
     }
 
-    .image-credit {
-      font-size: 0.85rem;
-      color: #7f8c8d;
-      margin-top: 0.4rem;
+    .subtitle {
+      font-style: italic;
+      margin-top: 0.6rem;
+      color: #555;
+      font-size: 1.1rem;
     }
 
     .container {
@@ -48,34 +51,39 @@
       padding: 0 1.5rem;
     }
 
-    .verse {
-      margin-bottom: 2.5rem;
-      padding-left: 1.2rem;
-      border-left: 3px solid #27ae60;
+    .section {
+      margin-bottom: 2.2rem;
     }
 
-    .verse h2 {
+    h2 {
       font-size: 1.4rem;
       color: #27ae60;
-      margin-top: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
     }
 
-    .highlight-link {
-      display: block;
+    p {
+      margin: 0 0 1.2rem;
+    }
+
+    .qr-placeholder {
+      background-color: #fff;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      padding: 1.5rem;
       text-align: center;
-      margin: 1.5rem auto;
-      padding: 0.8rem 1.2rem;
-      background-color: #e8f4e5;
-      color: #27ae60;
-      text-decoration: none;
-      border-radius: 6px;
-      max-width: 500px;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      margin: 2rem auto;
+      max-width: 300px;
+      color: #666;
+      font-size: 0.95rem;
     }
 
-    .highlight-link:hover {
-      background-color: #d4edda;
+    .qr-instruction {
+      text-align: center;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #2c3e50;
+      padding: 0 1rem;
     }
 
     footer {
@@ -83,16 +91,27 @@
       padding: 2rem 1.5rem 3rem;
       color: #7f8c8d;
       font-size: 0.95rem;
+      border-top: 1px solid #eee;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #27ae60;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 1.7rem;
       }
-      .verse h2 {
-        font-size: 1.2rem;
+      h2 {
+        font-size: 1.25rem;
       }
-      header img {
+      header img.basil {
         max-height: 180px;
       }
     }
@@ -100,51 +119,72 @@
 </head>
 <body>
   <header>
+    <!-- Imagem embutida em base64 (manjericão frondoso, ~80KB) -->
     <img 
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Basil_Basilicum.jpg/800px-Basil_Basilicum.jpg" 
+      class="basil"
+      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAEsAZADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo......" 
       alt="Pé frondoso de manjericão com folhas verdes e flores brancas"
     >
-    <div class="image-credit">
-      Foto: <a href="https://commons.wikimedia.org/wiki/File:Basil_Basilicum.jpg" target="_blank" rel="noopener">Rasbak / Wikimedia Commons</a> (CC BY-SA 3.0)
-    </div>
-    <h1>Manjericão da Justiça Neurocompatível</h1>
-    
-    <a 
-      href="https://commons.wikimedia.org/wiki/File:Basil_Basilicum.jpg" 
-      class="highlight-link"
-      target="_blank"
-      rel="noopener"
-    >
-      🌿 Veja um manjericão frondoso em alta resolução
-    </a>
+    <h1>🌿 Manjericão da Justiça Neurocompatível</h1>
+    <div class="subtitle">“Uma justiça que não corta, mas cultiva.”</div>
   </header>
 
   <div class="container">
-    <div class="verse">
-      <h2>1. Neuroplasticidade e regeneração</h2>
-      <p>O manjericão é uma erva de crescimento rápido, capaz de se regenerar mesmo após ser colhida — basta cortar os ramos superiores para que novos brotos surjam com vigor. Essa capacidade de renovação contínua espelha a neuroplasticidade, especialmente a do cérebro adolescente, que está em constante reorganização sináptica. Assim como o manjericão não é “fixo” em sua forma, a identidade humana — sobretudo em contextos de desenvolvimento ou trauma — não é estática. A justiça neurocompatível reconhece essa fluidez e rejeita a ideia de um “eu imutável” sobre o qual se baseia a responsabilização penal tradicional.</p>
+    <div class="section">
+      <p>
+        Este repositório apresenta uma justificação simbólica e poética para a escolha do manjericão como emblema da justiça neurocompatível — um modelo penal fundamentado em evidências neurocientíficas, respeito à neuroplasticidade humana e compromisso ético com a transformação, não com o castigo.
+      </p>
+      <p>
+        Desenvolvida no contexto de reflexões interdisciplinares entre neurociência, direito, literatura e justiça social, esta metáfora botânica propõe uma ruptura com os símbolos tradicionais da justiça (balança, espada, vendas) e sugere um novo imaginário: um sistema que cuida, regenera e floresce com a comunidade.
+      </p>
     </div>
 
-    <div class="verse">
-      <h2>2. Fragilidade e potência simultâneas</h2>
-      <p>O manjericão é delicado: suas folhas murcham rapidamente sem cuidado, mas, quando cultivado com atenção, exala um aroma intenso e curativo. Da mesma forma, a justiça neurocompatível parte do reconhecimento da vulnerabilidade neurobiológica (especialmente em jovens ou em pessoas com lesões cerebrais) não como fraqueza a ser punida, mas como condição que exige cuidado institucional. A potência do sistema não está na força punitiva, mas na capacidade de promover transformação por meio de escuta, reparação e acompanhamento neuropsicossocial.</p>
+    <h2>🌱 Por que o manjericão?</h2>
+    <p>
+      O manjericão foi escolhido por encarnar três princípios centrais da justiça neurocompatível:
+    </p>
+
+    <div class="section">
+      <p><strong>1. Neuroplasticidade e regeneração</strong><br>
+      Assim como o manjericão brota com vigor mesmo após ser colhido — bastando podar os ramos superiores para que novos folhos surjam —, o cérebro humano, especialmente o adolescente, é capaz de reorganização, aprendizado e transformação contínua. A justiça neurocompatível reconhece essa fluidez e rejeita a ficção jurídica do “eu imutável” sobre a qual se assenta a punição retributiva.</p>
+
+      <p><strong>2. Fragilidade e potência simultâneas</strong><br>
+      O manjericão murcha em poucas horas sem água, mas, sob cuidado, exala um aroma que cura, tempera e protege. Da mesma forma, a vulnerabilidade neurobiológica — seja por desenvolvimento incompleto, trauma ou lesão — não é defeito moral, mas condição que exige escuta, acompanhamento e reparação. A força do sistema está na capacidade de cuidar, não na capacidade de punir.</p>
+
+      <p><strong>3. Raízes comunitárias e sabedoria popular</strong><br>
+      Nas janelas de Blumenau, nas varandas de Bogotá, nos quintais de Buenos Aires, o manjericão cresce como planta de proteção, equilíbrio e memória afetiva. Não é cultivado por decretos, mas por mãos que sabem esperar. Assim deve ser a justiça: descentralizada, comunitária, integrada a saberes familiares, científicos e culturais — uma prática que “cresce onde é plantada com intenção”.</p>
     </div>
 
-    <div class="verse">
-      <h2>3. Raízes comunitárias e sabedoria popular</h2>
-      <p>Em muitas culturas latino-americanas, o manjericão é cultivado em janelas, quintais e terreiros — não como planta de luxo, mas como presença cotidiana de proteção, saúde e equilíbrio. Ele simboliza uma sabedoria doméstica que se transmite entre gerações. A justiça neurocompatível busca algo semelhante: descentralizar o poder punitivo do Estado e integrar saberes comunitários, familiares e científicos na avaliação e resposta ao ato infracional. Trata-se de uma justiça que “cresce onde é plantada com intenção”, não impõe de cima para baixo.</p>
+    <h2>🌿 Conclusão simbólica</h2>
+    <p>
+      O manjericão não carrega espada, nem veste vendas. Não pesa culpas em balanças. Ele simplesmente <strong>existe com generosidade</strong>: dá folhas, flores, aroma — e pede apenas terra, luz e tempo.<br>
+      É esse o novo símbolo que propomos: <strong>uma justiça que não corta, mas cultiva</strong>.
+    </p>
+
+    <div class="qr-instruction">
+      <p>
+        <strong>Aponte a câmera do seu celular para o QR Code abaixo.</strong><br>
+        Você acessará uma página com imagens, reflexões e o manjericão frondoso —<br>
+        vivo, verde, pulsante — como emblema de uma justiça que renasce.
+      </p>
     </div>
 
-    <div class="verse">
-      <h2>Conclusão simbólica</h2>
-      <p>Portanto, o manjericão não é um símbolo de severidade ou imutabilidade — como a balança ou a espada da justiça clássica —, mas de vida em transformação, cuidado ativo e possibilidade de recomeço. Ele representa uma justiça que não corta, mas cultiva; que não fixa culpabilidade, mas investiga condições; que não aprisiona identidades, mas abre caminho para novas narrativas.</p>
-      <p>Essa metáfora botânica pode ser especialmente poderosa em contextos latino-americanos, onde o cultivo de ervas carrega significados afetivos, espirituais e sociais profundos — alinhando-se à intenção de criar uma justiça mais humana, empiricamente fundamentada e eticamente orientada para a libertação, não para o controle.</p>
+    <div class="qr-placeholder">
+      [Insira aqui o QR Code]<br>
+      (Ex: imagem PNG ou SVG apontando para este site)
     </div>
+
+    <p style="text-align: center; margin-top: 1.5rem;">
+      <a href="https://commons.wikimedia.org/wiki/File:Basil_Basilicum.jpg" target="_blank" rel="noopener">
+        🌿 Veja um manjericão frondoso em alta resolução
+      </a>
+    </p>
   </div>
 
   <footer>
     <p>© 2025 — Justificação simbólica para a justiça neurocompatível<br>
     Inspirada na obra de José Erigutemberg Meneses de Lima</p>
+    <p>“Que a justiça não seja um muro, mas um jardim.”</p>
   </footer>
 </body>
 </html>
